@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benjamin Sew · Mechanical Engineer</title>
+  <meta name="description" content="Portfolio of Benjamin Sew — Mechanical Engineer specializing in CAD, CAM/CNC, and MATLAB simulation."/>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#101923;
+      --ink:#e8f1ff;
+      --muted:#9bb3cc;
+      --brand:#4aa3ff;
+      --brand-2:#00d1b2;
+      --chip:#1a2430;
+      --card:#0f1620;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,'Noto Sans',sans-serif;line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(180deg, rgba(11,15,20,0.95), rgba(11,15,20,0.75));backdrop-filter:blur(10px);z-index:20;border-bottom:1px solid rgba(255,255,255,.06)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{font-weight:800;letter-spacing:.5px}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 16px;border-radius:12px;background:var(--brand);color:#001327;font-weight:700;box-shadow:var(--shadow)}
+    .btn.alt{background:transparent;color:var(--ink);border:1px solid rgba(255,255,255,.12)}
+    .btn.small{padding:8px 12px;border-radius:10px;font-weight:700}
+    .hero{padding:80px 0;background:
+      radial-gradient(1200px 600px at 10% -10%, rgba(74,163,255,.25), transparent 60%),
+      radial-gradient(800px 400px at 90% 0%, rgba(0,209,178,.18), transparent 60%)}
+    .hero h1{font-size:44px;line-height:1.15;margin:0 0 12px}
+    .hero p{max-width:800px;color:var(--muted);margin:0 0 18px}
+    .chip-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .chip{background:var(--chip);border:1px solid rgba(255,255,255,.06);padding:8px 12px;border-radius:999px;color:#cfe3ff}
+    section{padding:56px 0;border-top:1px solid rgba(255,255,255,.06)}
+    h2{font-size:28px;margin:0 0 16px}
+    .grid{display:grid;gap:18px}
+    .g-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .g-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;padding:4px 10px;border-radius:999px;background:rgba(74,163,255,.12);color:#cfe3ff;border:1px solid rgba(74,163,255,.35);font-size:12px;font-weight:700;letter-spacing:.3px}
+    .figure{aspect-ratio:16/9;background:#0a121b;border:1px dashed rgba(255,255,255,.12);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#7ea7c9}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:6px 0}
+    .footer{padding:36px 0;text-align:center;color:var(--muted);font-size:14px}
+    .pillbar{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{background:#0c1420;border:1px solid rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;color:#cfe3ff;font-size:13px}
+    .timeline{border-left:2px solid rgba(255,255,255,.15);padding-left:14px;margin-left:6px}
+    .timeline .item{margin:14px 0}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#0b1320;border:1px solid rgba(255,255,255,.12);padding:2px 6px;border-radius:6px}
+    @media (max-width:900px){
+      .g-2{grid-template-columns:1fr}
+      .g-3{grid-template-columns:1fr}
+      .hero{padding:56px 0}
+      .hero h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Benjamin&nbsp;Sew</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a class="btn small" href="#" onclick="alert('Attach your PDF resume to this link.');return false;">Download Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="grid g-2" style="align-items:center">
+          <div>
+            <h1>Mechanical Engineer — Design · Manufacturing · Simulation</h1>
+            <p class="muted">B.Eng. Mechanical Engineering, Concordia University (2024). I design and manufacture reliable mechanical systems by combining SolidWorks CAD, MATLAB analysis, and hands‑on CAM/CNC prototyping.</p>
+            <div class="chip-row">
+              <span class="chip">SolidWorks</span>
+              <span class="chip">Fusion&nbsp;360&nbsp;CAM</span>
+              <span class="chip">MATLAB</span>
+              <span class="chip">CNC&nbsp;Machining</span>
+              <span class="chip">Sheet‑Metal&nbsp;Design</span>
+              <span class="chip">C++</span>
+            </div>
+            <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn alt" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="figure">Add a hero photo or CAD render here</div>
+            <p class="muted" style="margin:10px 0 0">Tip: Replace placeholders with a professional headshot or a M.U.R. prototype image.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About</h2>
+        <div class="grid g-2">
+          <div class="card">
+            <p>I’m a Montréal‑based Mechanical Engineering graduate who enjoys bridging the gap between digital design and physical performance. My recent work spans patent support in aerospace, manufacturing optimization in packaging, and hands‑on e‑commerce operations.</p>
+            <p class="muted">Fluent in English & French. Open to entry‑level roles in design, prototyping, and manufacturing.</p>
+            <div class="pillbar">
+              <span class="pill">Montreal, QC</span>
+              <span class="pill">B.Eng. 2024</span>
+              <span class="pill">EN/FR Bilingual</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="grid g-2">
+              <div>
+                <div class="tag">Email</div>
+                <p><a href="mailto:benjaminsew44@gmail.com">benjaminsew44@gmail.com</a></p>
+              </div>
+              <div>
+                <div class="tag">LinkedIn</div>
+                <p><a href="https://linkedin.com/in/benjamin-sew/" target="_blank" rel="noreferrer">https://linkedin.com/in/benjamin-sew/</a></p>
+              </div>
+              <div>
+                <div class="tag">Phone</div>
+                <p><a href="tel:+15149928161">+1 (514) 992‑8161</a></p>
+              </div>
+              <div>
+                <div class="tag">Location</div>
+                <p>Montréal, QC</p>
+              </div>
+            </div>
+            <p class="muted" style="margin-top:8px">Attach your resume PDF to the header button or place it here as an embedded link.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid g-3">
+          <div class="card">
+            <h3 style="margin-top:4px">CAD &amp; Modeling</h3>
+            <ul class="list">
+              <li>SolidWorks (CSWA in progress)</li>
+              <li>Fusion 360, AutoCAD</li>
+              <li>Sheet‑metal & assembly design</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:4px">Simulation &amp; Analysis</h3>
+            <ul class="list">
+              <li>MATLAB (Thin Airfoil, Vortex Panel, Finite Wing)</li>
+              <li>Ansys fundamentals</li>
+              <li>Data analysis & visualization</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:4px">Manufacturing &amp; Prototyping</h3>
+            <ul class="list">
+              <li>CAM & CNC machining</li>
+              <li>3D printing (FDM/SLA)</li>
+              <li>Fixture design & assembly</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:4px">Programming</h3>
+            <ul class="list">
+              <li>C++ basics (control logic)</li>
+              <li>G‑code familiarity</li>
+              <li>MS Office (Excel for calcs)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:4px">Languages</h3>
+            <ul class="list">
+              <li>English — fluent</li>
+              <li>French — fluent</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:4px">Soft Skills</h3>
+            <ul class="list">
+              <li>Communication & teamwork</li>
+              <li>Leadership & coordination</li>
+              <li>Analytical problem‑solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="card">
+          <div class="tag">Capstone · 2022–2023</div>
+          <h3 style="margin:8px 0 8px">Modular Utility Rover (M.U.R.)</h3>
+          <div class="grid g-2">
+            <div>
+              <p>High‑performance, remote‑controlled rover engineered for urban maintenance and snow‑removal in Montréal. Emphasis on modularity, stability, and serviceability.</p>
+              <ul class="list">
+                <li>Optimized skid‑steering and tracked/wheel selection for 25% turning improvement.</li>
+                <li>Designed suspension and chassis brackets in SolidWorks; fabricated via CNC & 3D printing.</li>
+                <li>Validated loads & torque distribution with MATLAB analyses.</li>
+              </ul>
+              <div class="pillbar">
+                <span class="pill">SolidWorks</span>
+                <span class="pill">Fusion 360</span>
+                <span class="pill">MATLAB</span>
+                <span class="pill">CNC</span>
+                <span class="pill">3D Printing</span>
+              </div>
+            </div>
+            <div>
+              <div class="figure"><img src="download.jpg" alt="Modular Utility Rover (MUR) CAD render" style="width:100%;height:100%;object-fit:cover;border-radius:12px"/></div>
+              <p class="muted" style="margin:10px 0 0">Replace with 2–3 images of the rover.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid g-2" style="margin-top:18px">
+          <div class="card">
+            <div class="tag">Aero · 2023</div>
+            <h3 style="margin:8px 0">NACA 2410 Airfoil Analysis</h3>
+
+            <div style="margin:12px 0">
+              <img src="e9cf6486-2a5d-42e5-89f5-a91fea9a504c.png" alt="NACA 2410: panel method visualization and pressure coefficient distribution (Cp) at alpha = 10 degrees" style="width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,.08)"/>
+              <p class="muted" style="margin:8px 0 0;font-size:13px">Representative result (α = 10°): panel discretization and Cp distribution.</p>
+            </div>
+    <p>Applied Thin Airfoil Theory, Vortex Panel Method, and Finite Wing Theory in MATLAB; achieved &lt; 5% error between analytical and experimental lift coefficients.</p>
+            <div class="pillbar">
+              <span class="pill">MATLAB</span>
+              <span class="pill">Aerodynamics</span>
+              <span class="pill">Analysis</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="tag">Leadership · 2022–2023</div>
+            <h3 style="margin:8px 0">ENGCOMM — Director of Internal Partnerships</h3>
+            <p>Led a 30‑person volunteer team coordinating sponsor deliverables to ensure a seamless competition experience across engineering and commerce teams.</p>
+            <div class="pillbar">
+              <span class="pill">Leadership</span>
+              <span class="pill">Coordination</span>
+              <span class="pill">Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="grid g-2">
+          <div class="card timeline">
+            <div class="item">
+              <strong>Fabric Design Treasures — E‑Commerce Assistant</strong> <span class="muted">Aug 2024–Present</span>
+              <ul class="list">
+                <li>Launched 2000+ SEO‑focused listings; contributed to ~10% sales growth.</li>
+                <li>Streamlined operations from 14h → 6h per week (57% efficiency gain).</li>
+              </ul>
+            </div>
+            <div class="item">
+              <strong>Pratt &amp; Whitney Canada — Patent & Innovation Intern</strong> <span class="muted">Jan–Apr 2024</span>
+              <ul class="list">
+                <li>Drafted 10+ patent applications for mechanical components.</li>
+                <li>Performed 50+ patent searches & competitor analyses to map aerospace trends.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <strong>Mitchel Lincoln — Mechanical Technician (Corrugated Box Mfg.)</strong> <span class="muted">May–Aug 2022</span>
+              <ul class="list">
+                <li>Resolved strap‑feed jams on belt machines; reduced downtime by ~15%.</li>
+                <li>Calibrated/maintained corrugation & cutting machines; wrote onboarding guide.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <strong>Smiths Medical — Field Service Technician</strong> <span class="muted">Jan–Feb 2018</span>
+              <ul class="list">
+                <li>Created batch QC process for syringe pumps; cut installation time by ~15%.</li>
+                <li>Ensured standards compliance via precise volume calibration tracking.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:4px">Education</h3>
+            <p><strong>B.Eng. Mechanical Engineering</strong> — Concordia University, 2019–2024</p>
+            <div class="tag" style="margin-top:8px">Tools</div>
+            <div class="pillbar" style="margin-top:8px">
+              <span class="pill">SolidWorks</span>
+              <span class="pill">AutoCAD</span>
+              <span class="pill">Fusion 360</span>
+              <span class="pill">Ansys</span>
+              <span class="pill">MATLAB</span>
+              <span class="pill">C++</span>
+              <span class="pill">Excel</span>
+            </div>
+            <p class="muted" style="margin-top:10px">Coursework/Focus: Design, Manufacturing, Simulation, Prototyping.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="grid g-2">
+          <div class="card">
+            <p><strong>Email:</strong> <a href="mailto:benjaminsew44@gmail.com">benjaminsew44@gmail.com</a><br/>
+               <strong>Phone:</strong> <a href="tel:+15149928161">+1 (514) 992‑8161</a><br/>
+               <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/benjamin-sew/" target="_blank" rel="noreferrer">https://linkedin.com/in/benjamin-sew/</a></p>
+            <p class="muted">Available for entry‑level Mechanical Engineering roles. Montréal‑based; open to relocation.</p>
+          </div>
+          <div class="card">
+            <div class="figure">Embed a contact form or map</div>
+            <p class="muted" style="margin:10px 0 0">On Jimdo, add a form block and route to your email address.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="y"></span> Benjamin Sew · All rights reserved
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
