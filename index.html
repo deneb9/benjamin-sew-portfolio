@@ -61,9 +61,7 @@
       .hero h1{font-size:36px}
     }
   
-.linkwrap{overflow-wrap:anywhere;word-break:break-word;}
-    a.linkwrap{display:inline-block;max-width:100%;}
-.value{max-width:100%;}
+.linkwrap{overflow-wrap:anywhere;word-break:break-word;display:inline-block;max-width:100%;}
 
 .card a{display:inline-block;max-width:100%;}
 </style>
@@ -79,7 +77,7 @@
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
-         <a class="btn" href="Benjamin_Sew_Resume.pdf" download>Download Resume</a>
+          <a class="btn" href="Benjamin_Sew_Resume.pdf" download>Download Resume</a>
         </div>
       </nav>
     </div>
@@ -129,133 +127,64 @@
             </div>
           </div>
           <div class="card">
+            
             <div class="grid g-2">
               <div>
                 <div class="tag">Email</div>
-               <p><a href="mailto:benjaminsew44@gmail.com" class="linkwrap">benjaminsew44@gmail.com</a></p>
+                <p><a href="mailto:benjaminsew44@gmail.com" class="linkwrap">benjaminsew44@gmail.com</a></p>
+              </div>
               <div>
                 <div class="tag">LinkedIn</div>
-               <p><a href="https://linkedin.com/in/benjamin-sew/" target="_blank" rel="noreferrer" class="linkwrap">linkedin.com/in/benjamin-sew</a></p>
+                <p><a href="https://linkedin.com/in/benjamin-sew/" target="_blank" rel="noreferrer" class="linkwrap">linkedin.com/in/benjamin-sew</a></p>
               </div>
               <div>
                 <div class="tag">Phone</div>
-                <p><a href="tel:+15149928161">+1 (514) 992‑8161</a></p>
+                <p><a href="tel:+15149928161" class="linkwrap">+1 (514) 992-8161</a></p>
               </div>
               <div>
                 <div class="tag">Location</div>
                 <p>Montreal, QC</p>
               </div>
             </div>
-            <p class="muted" style="margin-top:8px"><a class="btn" href="Benjamin_Sew_Resume.pdf" download style="margin-top:14px;display:inline-flex;gap:10px;align-items:center;">Download Resume</a>
-</div>
-      </div>
-    </section>
 
-    <section id="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="grid g-3">
-          <div class="card">
-            <h3 style="margin-top:4px">CAD &amp; Modeling</h3>
-            <ul class="list">
-              <li>SolidWorks (CSWP, CSWA) (CSWA in progress)</li>
-              <li>Fusion 360, AutoCAD</li>
-              <li>Sheet‑metal & assembly design</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:4px">Simulation &amp; Analysis</h3>
-            <ul class="list">
-              <li>MATLAB (Thin Airfoil, Vortex Panel, Finite Wing)</li>
-              <li>Ansys fundamentals</li>
-              <li>Data analysis & visualization</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:4px">Manufacturing &amp; Prototyping</h3>
-            <ul class="list">
-              <li>CAM & CNC machining</li>
-              <li>3D printing (FDM/SLA)</li>
-              <li>Fixture design & assembly</li>
-            </ul>
-          </div>
-          
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-
-        <div class="card">
-          <div class="tag">Capstone · 2022–2023</div>
-          <h3 style="margin:8px 0 8px">Modular Utility Rover (M.U.R.)</h3>
-            <div class="muted" style="margin:10px 0 6px">Systems case study (hardware + validation)</div>
-            <ul style="margin:0 0 10px 18px">
-              <li><b>Team of 6:</b> developed a modular tracked rover for snow removal + payload transport.</li>
-              <li><b>My focus:</b> suspension/track integration, manufacturing support, subsystem integration, and testing &amp; validation.</li>
-              <li>Supported drivetrain packaging &amp; alignment (dual motors, chain transmission) during assembly and test iterations.</li>
-              <li>Participated in validation testing against key targets (mobility, reliability, subsystem compatibility).</li>
-            </ul>
-            <div class="chips" style="margin-top:8px">
-              <span class="chip">Suspension &amp; Mobility</span>
-              <span class="chip">Manufacturing</span>
-              <span class="chip">Integration</span>
-              <span class="chip">Testing</span>
-            </div>
-
-          <div class="grid g-2">
-            <div>
-              <p>High‑performance, remote‑controlled rover engineered for urban maintenance and snow‑removal in Montreal. Emphasis on modularity, stability, and serviceability.</p>
-              <ul class="list">
-                <li>Optimized skid‑steering and tracked/wheel selection for 25% turning improvement.</li>
-                <li>Designed suspension and chassis brackets in SolidWorks (CSWP, CSWA); fabricated via CNC & 3D printing.</li>
-                <li>Validated loads & torque distribution with MATLAB analyses.</li>
-              </ul>
-              <div class="pillbar">
-                <span class="pill">SolidWorks (CSWP, CSWA)</span>
-                <span class="pill">Fusion 360</span>
-                <span class="pill">MATLAB</span>
-                <span class="pill">CNC</span>
-                <span class="pill">3D Printing</span>
-              </div>
-            </div>
-            <div>
-              <div class="figure"><img src="download.jpg" alt="Modular Utility Rover (MUR) CAD render" style="width:100%;height:100%;object-fit:cover;border-radius:12px"/></div>
-              <p class="muted" style="margin:10px 0 0">Replace with 2–3 images of the rover.</p>
-            </div>
-          </div>
-        </div>
 
         <div class="grid g-2" style="margin-top:18px">
           <div class="card">
             <div class="tag">Aero · 2023</div>
             <h3 style="margin:8px 0">NACA 2410 Airfoil Analysis</h3>
-            <div class="muted" style="margin:10px 0 6px">Computational aerodynamics (MATLAB)</div>
+
+            <p class="muted" style="margin:8px 0 14px"><b>Aerodynamics Analysis</b> · MATLAB</p>
+
+            <h4 style="margin:10px 0 6px">Objective</h4>
+            <p>Analyze the aerodynamic behavior of a NACA 2410 airfoil across multiple angles of attack and compare analytical vs numerical predictions.</p>
+
+            <h4 style="margin:12px 0 6px">My Work</h4>
             <ul style="margin:0 0 10px 18px">
-              <li>Implemented a <b>Source/Vortex Panel Method</b> (170 panels) and applied the <b>Kutta condition</b>.</li>
-              <li>Computed <b>CL</b> and <b>CM</b> across multiple angles of attack and compared trends to reference results.</li>
-              <li>Generated Cp distributions and used them to interpret suction peaks and aerodynamic loading behavior.</li>
-              <li>Documented model limitations and differences between analytical vs numerical predictions.</li>
+              <li>Implemented <b>Thin Airfoil Theory</b> for baseline lift prediction.</li>
+              <li>Built a <b>Source/Vortex Panel Method</b> model (170 panels) and applied the <b>Kutta condition</b>.</li>
+              <li>Generated <b>pressure coefficient (Cp)</b> distributions and interpreted loading behavior.</li>
+              <li>Compared trends and documented differences between analytical and numerical approaches.</li>
             </ul>
-            <div class="chips" style="margin-top:8px">
+
+            <h4 style="margin:12px 0 6px">Tools Used</h4>
+            <p class="muted">MATLAB · Numerical Modeling · Aerodynamics · Data Visualization</p>
+
+            <h4 style="margin:12px 0 6px">Result</h4>
+            <p>Produced Cp plots and lift/moment predictions across AoA, demonstrating model implementation and validation thinking.</p>
+
+            <div style="margin:14px 0 0">
+              <img src="ccc2451d-e63c-413f-a52d-160cfd4fd694.png" alt="NACA 2410: panel method visualization and pressure coefficient distribution (Cp)" style="width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,.08)"/>
+              <p class="muted" style="margin:8px 0 0;font-size:13px">Representative result: panel discretization and Cp distribution.</p>
+            </div>
+
+            <div class="chips" style="margin-top:10px">
               <span class="chip">MATLAB</span>
               <span class="chip">Panel Method</span>
               <span class="chip">Cp Plots</span>
               <span class="chip">Validation</span>
             </div>
 
-
-            <div style="margin:12px 0">
-              <img src="e9cf6486-2a5d-42e5-89f5-a91fea9a504c.png" alt="NACA 2410: panel method visualization and pressure coefficient distribution (Cp) at alpha = 10 degrees" style="width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,.08)"/>
-              <p class="muted" style="margin:8px 0 0;font-size:13px">Representative result (α = 10°): panel discretization and Cp distribution.</p>
-            </div>
-    <p>Applied Thin Airfoil Theory, Vortex Panel Method, and Finite Wing Theory in MATLAB; achieved &lt; 5% error between analytical and experimental lift coefficients.</p>
-            <div class="pillbar">
-              <span class="pill">MATLAB</span>
-              <span class="pill">Aerodynamics</span>
-              <span class="pill">Analysis</span>
-            </div>
+</div>
           </div>
 
           <div class="card">
@@ -330,9 +259,9 @@
         <h2>Contact</h2>
         <div class="grid g-2">
           <div class="card">
-          <p><b>Email:</b> <a href="mailto:benjaminsew44@gmail.com" class="linkwrap">benjaminsew44@gmail.com</a></p>
-<p><b>Phone:</b> <a href="tel:+15149928161" class="linkwrap">+1 (514) 992-8161</a></p>
-<p><b>LinkedIn:</b> <a href="https://linkedin.com/in/benjamin-sew/" target="_blank" rel="noreferrer" class="linkwrap">linkedin.com/in/benjamin-sew</a></p>
+            <p><strong>Email:</strong> <a href="mailto:<span class="linkwrap">benjaminsew44@gmail.com</span>" class="linkwrap"><span class="linkwrap">benjaminsew44@gmail.com</span></a><br/>
+               <strong>Phone:</strong> <a href="tel:+15149928161">+1 (514) 992‑8161</a><br/>
+               <strong>LinkedIn:</strong> <a href="<span class="linkwrap">linkedin.com/in/benjamin-sew/</span>" target="_blank" rel="noreferrer"><span class="linkwrap">linkedin.com/in/benjamin-sew/</span></a></p>
             <p class="muted">Available for entry‑level Mechanical Engineering roles. Montreal‑based; open to relocation.</p>
           </div>
           <div class="card">
