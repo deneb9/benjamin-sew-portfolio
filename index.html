@@ -13,6 +13,7 @@
       --muted:#b8c4dc;
       --line:rgba(255,255,255,.10);
       --accent:#62a8ff;
+      --accent2:#7bd3ff;
       --shadow: 0 10px 40px rgba(0,0,0,.45);
       --radius:16px;
       --radius2:22px;
@@ -118,7 +119,16 @@
       font-size:13px;
       margin-bottom:10px;
     }
+
+    /* Clickable links should look clickable */
+    a.linkwrap, .linkwrap a{
+      color: var(--accent2);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a.linkwrap:hover, .linkwrap a:hover{filter:brightness(1.1)}
     .linkwrap{overflow-wrap:anywhere; word-break:break-word; display:inline-block; max-width:100%}
+
     .figure img{
       width:100%;
       height:auto;
@@ -126,31 +136,36 @@
       border:1px solid rgba(255,255,255,.08);
       display:block;
     }
+
+    /* Two images side-by-side */
     .two-img{
-      display:flex;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
       gap:14px;
       margin-top:14px;
-      flex-wrap:wrap;
     }
     .two-img img{
-      flex:1 1 320px;
       width:100%;
       height:auto;
       border-radius:14px;
       border:1px solid rgba(255,255,255,.08);
       display:block;
     }
+
     ul{margin:0 0 10px 18px; color:var(--text)}
     li{margin:6px 0; color:var(--text)}
+
     .footer{
       border-top:1px solid var(--line);
       padding:20px 0 40px;
       color:var(--muted);
       font-size:13px;
     }
+
     @media (max-width: 900px){
       .hero-grid{grid-template-columns:1fr}
       .grid{grid-template-columns:1fr}
+      .two-img{grid-template-columns:1fr}
       .title{font-size:34px}
       .nav{gap:8px}
     }
@@ -363,13 +378,31 @@
   <section id="experience">
     <div class="container">
       <h2>Experience</h2>
+
       <div class="card">
         <div class="tag">Industry</div>
-        <h3>Patent &amp; Innovation Engineering (Aerospace)</h3>
-        <p class="muted" style="margin-top:6px">
-          Experience supporting patent-related engineering work in an aerospace context, emphasizing structured documentation, systems thinking, and collaboration.
+        <h3>Patent &amp; Innovation Engineering Intern — Aerospace</h3>
+        <p class="muted" style="margin-top:6px">Pratt &amp; Whitney Canada</p>
+
+        <h4>Overview</h4>
+        <p>
+          Supported engineering patent analysis and innovation evaluation within an aerospace environment.
+          Work focused on reviewing mechanical systems, identifying technical novelty, and assisting in documentation
+          of engineering concepts for intellectual property evaluation.
         </p>
+
+        <h4>Key Contributions</h4>
+        <ul>
+          <li>Reviewed technical documentation and mechanical system designs to evaluate potential patent claims.</li>
+          <li>Assisted engineers in analyzing aerospace technologies including turbofan and turboprop propulsion systems.</li>
+          <li>Conducted patent searches and technical comparisons to identify prior art and assess innovation opportunities.</li>
+          <li>Supported preparation of structured engineering documentation for patent submissions.</li>
+        </ul>
+
+        <h4>Skills Demonstrated</h4>
+        <p class="muted">Technical research · Engineering documentation · Systems analysis · Aerospace technology exposure</p>
       </div>
+
     </div>
   </section>
 
