@@ -1,1 +1,417 @@
-<!doctype html><html><head><meta charset='utf-8'><title>Benjamin Sew Portfolio</title></head><body>Placeholder</body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benjamin Sew | Mechanical Engineering Graduate</title>
+
+<style>
+
+:root{
+--bg:#070b12;
+--panel:#0c1220;
+--text:#eaf1ff;
+--muted:#b8c4dc;
+--line:rgba(255,255,255,.10);
+--accent:#7bd3ff;
+--shadow:0 10px 40px rgba(0,0,0,.45);
+--radius:22px;
+--max:1100px;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:system-ui;
+background:
+radial-gradient(900px 500px at 80% -10%, rgba(98,168,255,.18), transparent 55%),
+radial-gradient(700px 400px at 10% 10%, rgba(123,211,255,.12), transparent 55%),
+linear-gradient(180deg,#060a11 0%,#070b12 100%);
+color:var(--text);
+}
+
+.container{
+max-width:var(--max);
+margin:auto;
+padding:0 20px;
+}
+
+.topbar{
+position:sticky;
+top:0;
+background:#070b12dd;
+backdrop-filter:blur(10px);
+border-bottom:1px solid var(--line);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 0;
+}
+
+.nav a{
+color:var(--muted);
+margin-left:16px;
+text-decoration:none;
+}
+
+.btn{
+background:#62a8ff;
+padding:10px 16px;
+border-radius:999px;
+color:#06101f;
+font-weight:700;
+text-decoration:none;
+}
+
+.hero{
+padding:60px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 320px;
+gap:30px;
+align-items:center;
+}
+
+.card{
+background:var(--panel);
+border:1px solid var(--line);
+border-radius:var(--radius);
+padding:28px;
+box-shadow:var(--shadow);
+}
+
+.headshot{
+width:100%;
+border-radius:16px;
+border:1px solid var(--line);
+}
+
+.title{
+font-size:40px;
+margin-bottom:8px;
+}
+
+.subtitle{
+color:var(--muted);
+}
+
+section{
+padding:50px 0;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.figure img{
+width:100%;
+border-radius:14px;
+border:1px solid var(--line);
+}
+
+.two-img{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+margin-top:16px;
+}
+
+.two-img img{
+width:100%;
+border-radius:12px;
+border:1px solid var(--line);
+}
+
+.caption{
+font-size:13px;
+color:var(--muted);
+margin-top:6px;
+}
+
+.link{
+color:var(--accent);
+text-decoration:underline;
+}
+
+.tag{
+font-size:12px;
+border:1px solid var(--line);
+padding:6px 10px;
+border-radius:999px;
+display:inline-block;
+margin-bottom:10px;
+color:var(--muted);
+}
+
+.quicklinks{
+margin-top:40px;
+}
+
+@media(max-width:850px){
+.hero-grid{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr}
+.two-img{grid-template-columns:1fr}
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="topbar">
+<div class="container">
+<div class="nav">
+<b>Benjamin Sew</b>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#certifications">Certifications</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+<a class="btn" href="Benjamin_Sew_Resume.pdf">Download Resume</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<section class="hero">
+<div class="container">
+
+<div class="hero-grid">
+
+<div class="card">
+
+<h1 class="title">Benjamin Sew</h1>
+
+<p class="subtitle">
+Mechanical Engineering Graduate<br>
+SolidWorks (CSWP, CSWA) | Mechanical Design | 3D Modeling | R&D
+</p>
+
+<p style="margin-top:14px;color:var(--muted)">
+Montreal-based mechanical engineering graduate focused on bridging digital design
+and real-world performance through mechanical design, prototyping, and testing.
+</p>
+
+<p class="subtitle" style="margin-top:12px">
+Seeking entry-level opportunities in mechanical design, 3D modeling and R&D.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<img src="head.jpg" class="headshot" alt="Benjamin Sew Headshot">
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="about">
+<div class="container">
+
+<h2>About</h2>
+
+<div class="card">
+
+<p>
+I'm a Montreal-based Mechanical Engineering graduate who enjoys bridging the gap
+between digital design and physical performance.
+</p>
+
+<p>
+My experience includes aerospace patent support, mechanical system analysis,
+manufacturing exposure, and hands-on engineering through prototyping and testing.
+</p>
+
+<p class="subtitle">
+Fluent in English and French. Open to relocation.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="skills">
+<div class="container">
+
+<h2>Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Engineering Tools</h3>
+<ul>
+<li>SolidWorks (CSWP, CSWA)</li>
+<li>MATLAB</li>
+<li>ANSYS</li>
+<li>Fusion 360</li>
+<li>AutoCAD</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Engineering Skills</h3>
+<ul>
+<li>Mechanical Design</li>
+<li>3D Modeling</li>
+<li>System Integration</li>
+<li>Prototyping</li>
+<li>Testing & Validation</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="certifications">
+<div class="container">
+
+<h2>Certifications</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Certified SOLIDWORKS Professional (CSWP)</h3>
+<p class="subtitle">Advanced part modeling and assemblies.</p>
+<a class="link" href="CSWPcert.pdf">View Certificate</a>
+</div>
+
+<div class="card">
+<h3>Certified SOLIDWORKS Associate (CSWA)</h3>
+<p class="subtitle">SolidWorks fundamentals and engineering modeling.</p>
+<a class="link" href="CSWAcertificate.pdf">View Certificate</a>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="projects">
+<div class="container">
+
+<h2>Projects</h2>
+
+<div class="card">
+
+<div class="tag">Capstone Project</div>
+
+<h3>Modular Utility Rover (M.U.R.)</h3>
+
+<p class="subtitle">
+Team of 6 • Suspension • Manufacturing • System Integration • Testing
+</p>
+
+<div class="figure">
+<img src="download.jpg">
+<p class="caption">CAD model of the modular tracked rover.</p>
+</div>
+
+<div class="two-img">
+
+<div>
+<img src="MUR-pic1.png">
+<p class="caption">Motor drivetrain installation.</p>
+</div>
+
+<div>
+<img src="MUR-pic2.png">
+<p class="caption">Integrated chassis and electronics.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="tag">Aerodynamics</div>
+
+<h3>NACA 2410 Airfoil Analysis</h3>
+
+<div class="figure">
+<img src="e9cf6486-2a5d-42e5-89f5-a91fea9a504c.png">
+<p class="caption">MATLAB panel method aerodynamic simulation.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="experience">
+<div class="container">
+
+<h2>Experience</h2>
+
+<div class="card">
+
+<h3>Patent & Innovation Engineering Intern</h3>
+<p class="subtitle">Pratt & Whitney Canada</p>
+
+<ul>
+<li>Analyzed turbofan and turboprop propulsion systems</li>
+<li>Performed patent searches and prior‑art research</li>
+<li>Supported engineering documentation for patent filings</li>
+<li>Reviewed mechanical system architectures</li>
+</ul>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contact">
+<div class="container">
+
+<h2>Contact</h2>
+
+<div class="card quicklinks">
+
+<p>Email: <a class="link" href="mailto:benjaminsew44@gmail.com">benjaminsew44@gmail.com</a></p>
+
+<p>LinkedIn: <a class="link" href="https://linkedin.com/in/benjamin-sew">linkedin.com/in/benjamin-sew</a></p>
+
+<p>Phone: <a class="link" href="tel:+15149928161">+1 (514) 992‑8161</a></p>
+
+<p>Location: Montreal, QC</p>
+
+<a class="btn" href="Benjamin_Sew_Resume.pdf">Download Resume</a>
+
+</div>
+
+</div>
+</section>
+
+
+</body>
+</html>
